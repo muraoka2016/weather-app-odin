@@ -63,3 +63,14 @@ npm run build
 ```
 
 O arquivo `.env` não deve ser versionado, pois contém uma credencial de API.
+
+## Deploy na Vercel
+
+O projeto já inclui a configuração necessária em `vercel.json`. Ao importar o
+repositório na Vercel, use os valores padrão detectados ou confirme:
+
+- **Build Command:** `npm run build`
+- **Output Directory:** `dist`
+
+Antes do deploy, adicione `WEATHER_API_KEY` como variável de ambiente do projeto
+na Vercel. A variável é usada durante o build pelo `dotenv-webpack`.
