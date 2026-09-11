@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin Weather App</title>
+  </head>
+  <body>
+    <main class="weather-card">
+      <h1 class="app-title">Odin Weather</h1>
+
+      <form class="search-form" action="">
+        <input
+          type="text"
+          name="location"
+          id="location-input"
+          list="location-suggestions"
+          placeholder="Search for a city..."
+          required
+        />
+        <datalist id="location-suggestions"></datalist>
+        <button type="submit" class="search-btn">Search</button>
+      </form>
+
+      <div id="container-element" class="results-container"></div>
+    </main>
+  </body>
+</html>
